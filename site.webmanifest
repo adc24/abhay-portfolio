@@ -1,0 +1,17 @@
+{
+  "name": "Abhay Chouhan — Developer Portfolio",
+  "short_name": "Abhay Chouhan",
+  "description": "Portfolio of Abhay Chouhan, Full Stack Developer, Data Analyst, and AI-Assisted Developer.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#002b42",
+  "theme_color": "#003047",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

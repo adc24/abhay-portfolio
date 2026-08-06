@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Abhay Chouhan — Full Stack Developer, Data Analyst, and AI-Assisted Developer building scalable web products and data-driven software.">
+  <meta name="theme-color" content="#003047">
+
+  <title>Abhay Chouhan — Full Stack Developer & Data Analyst</title>
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" data-site-header>
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Abhay Chouhan — home">
+        Abhay Chouhan<sup>®</sup>
+      </a>
+
+      <ul class="nav__links">
+        <li><a class="nav__link is-active" href="#home" aria-current="page">Home</a></li>
+        <li><a class="nav__link" href="#projects">Projects</a></li>
+        <li><a class="nav__link" href="#skills">Skills</a></li>
+        <li><a class="nav__link" href="#about">About</a></li>
+        <li><a class="nav__link" href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <a class="button button--nav liquid-glass nav__resume" href="assets/Abhay_Chouhan_Resume.pdf" type="application/pdf" data-resume-open>
+          <span>View Resume</span>
+        </a>
+
+        <button
+          class="menu-toggle liquid-glass"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+          data-menu-toggle
+        >
+          <span class="menu-toggle__line"></span>
+          <span class="menu-toggle__line"></span>
+        </button>
+      </div>
+    </nav>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" aria-hidden="true" inert data-mobile-menu>
+      <ul class="mobile-menu__links">
+        <li><a class="mobile-menu__link is-active" href="#home">Home</a></li>
+        <li><a class="mobile-menu__link" href="#projects">Projects</a></li>
+        <li><a class="mobile-menu__link" href="#skills">Skills</a></li>
+        <li><a class="mobile-menu__link" href="#about">About</a></li>
+        <li><a class="mobile-menu__link" href="#contact">Contact</a></li>
+        <li class="mobile-menu__resume"><a href="assets/Abhay_Chouhan_Resume.pdf" type="application/pdf" data-resume-open>View Resume →</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero -->
+    <section class="hero" id="home" aria-labelledby="hero-title" data-section>
+      <!-- The video is decorative; all meaningful content remains in the HTML. -->
+      <video
+        class="hero__video"
+        autoplay
+        loop
+        muted
+        playsinline
+        preload="auto"
+        aria-hidden="true"
+        tabindex="-1"
+      >
+        <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260314_131748_f2ca2a28-fed7-44c8-b9a9-bd9acdd5ec31.mp4" type="video/mp4">
+      </video>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow animate-fade-rise">
+          <span>Abhay Chouhan</span>
+          <span aria-hidden="true">—</span>
+          <span>Full Stack Developer · Data Analyst · AI-Assisted Developer</span>
+        </p>
+
+        <h1 class="hero__title animate-fade-rise" id="hero-title">
+          Crafting <em>software</em><br>
+          that solves<br>
+          <em>real problems.</em>
+        </h1>
+
+        <p class="hero__description animate-fade-rise-delay">
+          I build scalable web applications, interactive data experiences,<br class="desktop-break">
+          and AI-assisted products—from real-time IoT monitoring<br class="desktop-break">
+          to intelligent analytics platforms.
+        </p>
+
+        <a class="button button--primary liquid-glass animate-fade-rise-delay-2" href="#projects">
+          <span>Explore Projects</span>
+        </a>
+      </div>
+
+      <a class="hero__scroll" href="#projects" aria-label="Scroll to selected projects">
+        <span>Selected work</span>
+        <span class="hero__scroll-line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- Selected projects -->
+    <section class="section projects" id="projects" aria-labelledby="projects-title" data-section>
+      <div class="container">
+        <header class="section-heading reveal">
+          <div>
+            <p class="section-kicker">01 / Selected work</p>
+            <h2 class="section-title" id="projects-title">Projects built<br>for <em>impact.</em></h2>
+          </div>
+          <p class="section-intro">
+            Seven projects across AI analytics, SaaS billing, IoT monitoring, developer tools, business intelligence, and interactive frontend experiences.
+          </p>
+        </header>
+
+        <div class="project-list">
+          <article class="project reveal">
+            <span class="project__number" aria-hidden="true">01</span>
+            <div class="project__main">
+              <p class="project__type">AI-powered analytics workspace</p>
+              <h3 class="project__title">DataSnap</h3>
+            </div>
+            <div class="project__details">
+              <p>Full-stack analytics platform with dashboard CRUD, drag-and-drop layouts, in-browser SQL execution, rich charts, and an AI assistant for natural-language insights.</p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li>React 18</li>
+                <li>FastAPI</li>
+                <li>Supabase</li>
+                <li>DuckDB</li>
+              </ul>
+              <div class="project__links">
+                <a href="https://datasnap-app.vercel.app/" target="_top" rel="noopener">Live app ↗</a>
+                <a href="https://github.com/adc24/Datasnap" target="_top" rel="noopener">GitHub ↗</a>
+              </div>
+            </div>
+            <a class="project__arrow" href="https://datasnap-app.vercel.app/" target="_top" rel="noopener" aria-label="Open the DataSnap live application">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 19 19 5M8 5h11v11"/>
+              </svg>
+            </a>
+          </article>
+
+          <article class="project reveal">
+            <span class="project__number" aria-hidden="true">02</span>
+            <div class="project__main">
+              <p class="project__type">Real-time IoT monitoring</p>
+              <h3 class="project__title project__title--long">Soldier Health &amp; Position</h3>
+            </div>
+            <div class="project__details">
+              <p>Live dashboard for soldier vitals and GPS location, with automatic polling, Normal/Warning/Critical classification, field alerts, threat analysis, charts, and data exports.</p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>Recharts</li>
+                <li>Google Sheets API</li>
+              </ul>
+              <div class="project__links">
+                <a href="https://github.com/adc24/soldier-health-tracking" target="_top" rel="noopener">GitHub ↗</a>
+                <span>KSCST SPP selected</span>
+              </div>
+            </div>
+            <a class="project__arrow" href="https://github.com/adc24/soldier-health-tracking" target="_top" rel="noopener" aria-label="View the Soldier Health and Position Tracking project on GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 19 19 5M8 5h11v11"/>
+              </svg>
+            </a>
+          </article>
+
+          <article class="project reveal">
+            <span class="project__number" aria-hidden="true">03</span>
+            <div class="project__main">
+              <p class="project__type">Business data analytics</p>
+              <h3 class="project__title project__title--long">Customer Behavior Dashboard</h3>
+            </div>
+            <div class="project__details">
+              <p>End-to-end shopping behavior analysis covering data cleaning, exploratory analysis, SQL queries, customer segmentation, revenue trends, subscriptions, and review ratings.</p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li>Python</li>
+                <li>Pandas</li>
+                <li>MySQL</li>
+                <li>Power BI</li>
+              </ul>
+              <div class="project__links">
+                <a href="https://github.com/adc24/customer-behavior-dashboard" target="_top" rel="noopener">GitHub ↗</a>
+              </div>
+            </div>
+            <a class="project__arrow" href="https://github.com/adc24/customer-behavior-dashboard" target="_top" rel="noopener" aria-label="View the Customer Behavior Dashboard project on GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 19 19 5M8 5h11v11"/>
+              </svg>
+            </a>
+          </article>
+
+          <article class="project reveal">
+            <span class="project__number" aria-hidden="true">04</span>
+            <div class="project__main">
+              <p class="project__type">GST billing &amp; invoice automation</p>
+              <h3 class="project__title">Tax Invoice</h3>
+            </div>
+            <div class="project__details">
+              <p>Professional billing system for Indian businesses with automatic invoice numbering, GST state codes, live IGST or CGST + SGST calculations, rupee-to-words conversion, CRUD tools, and print-ready A4 invoices.</p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li>Python Flask</li>
+                <li>SQLite</li>
+                <li>Vanilla JavaScript</li>
+                <li>WeasyPrint</li>
+              </ul>
+              <div class="project__links">
+                <a href="https://github.com/adc24/tax-invoice-app" target="_top" rel="noopener">GitHub ↗</a>
+                <span>PDF export · Railway ready</span>
+              </div>
+            </div>
+            <a class="project__arrow" href="https://github.com/adc24/tax-invoice-app" target="_top" rel="noopener" aria-label="View the Tax Invoice billing application on GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 19 19 5M8 5h11v11"/>
+              </svg>
+            </a>
+          </article>
+
+          <article class="project reveal">
+            <span class="project__number" aria-hidden="true">05</span>
+            <div class="project__main">
+              <p class="project__type">AI tools discovery platform</p>
+              <h3 class="project__title">AIStack</h3>
+            </div>
+            <div class="project__details">
+              <p>Responsive AI tools directory for discovering, searching, filtering, rating, and submitting tools across coding, writing, design, marketing, voice, video, and productivity categories.</p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>FastAPI</li>
+                <li>SQLite</li>
+              </ul>
+              <div class="project__links">
+                <a href="https://github.com/adc24/aistack" target="_top" rel="noopener">GitHub ↗</a>
+                <span>Dark mode · Responsive UI</span>
+              </div>
+            </div>
+            <a class="project__arrow" href="https://github.com/adc24/aistack" target="_top" rel="noopener" aria-label="View AIStack on GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 19 19 5M8 5h11v11"/>
+              </svg>
+            </a>
+          </article>
+
+          <article class="project reveal">
+            <span class="project__number" aria-hidden="true">06</span>
+            <div class="project__main">
+              <p class="project__type">Interactive restaurant experience</p>
+              <h3 class="project__title">SpicyBite</h3>
+            </div>
+            <div class="project__details">
+              <p>Framework-free restaurant landing page with 3D tilt and glare interactions, animated counters, a glassy sticky navbar, floating details, reviews, and a fully responsive menu experience.</p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Vanilla JavaScript</li>
+                <li>Vercel</li>
+              </ul>
+              <div class="project__links">
+                <a href="https://github.com/adc24/SpicyBite" target="_top" rel="noopener">GitHub ↗</a>
+                <span>No frameworks</span>
+              </div>
+            </div>
+            <a class="project__arrow" href="https://github.com/adc24/SpicyBite" target="_top" rel="noopener" aria-label="View SpicyBite on GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 19 19 5M8 5h11v11"/>
+              </svg>
+            </a>
+          </article>
+
+          <article class="project reveal">
+            <span class="project__number" aria-hidden="true">07</span>
+            <div class="project__main">
+              <p class="project__type">Self-hosted link manager</p>
+              <h3 class="project__title">Stash</h3>
+            </div>
+            <div class="project__details">
+              <p>Fast personal URL toolbox with folder and link CRUD, tags, live search, sorting, persistent themes, keyboard shortcuts, JSON import/export, quick-capture bookmarklet, and Docker deployment.</p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li>React + Vite</li>
+                <li>Flask</li>
+                <li>SQLite</li>
+                <li>Docker</li>
+              </ul>
+              <div class="project__links">
+                <a href="https://github.com/adc24/stash" target="_top" rel="noopener">GitHub ↗</a>
+                <span>Self-hosted · Render ready</span>
+              </div>
+            </div>
+            <a class="project__arrow" href="https://github.com/adc24/stash" target="_top" rel="noopener" aria-label="View Stash on GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 19 19 5M8 5h11v11"/>
+              </svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills" id="skills" aria-labelledby="skills-title" data-section>
+      <div class="container">
+        <header class="section-heading reveal">
+          <div>
+            <p class="section-kicker">02 / Capabilities</p>
+            <h2 class="section-title" id="skills-title">Code, data<br>&amp; <em>intelligence.</em></h2>
+          </div>
+          <p class="section-intro">
+            A practical toolkit spanning modern web development, backend systems, analytics, databases, visualization, and AI-assisted engineering.
+          </p>
+        </header>
+
+        <div class="skills-grid">
+          <article class="skill-group reveal">
+            <div class="skill-group__heading">
+              <span>01</span>
+              <h3>Languages</h3>
+            </div>
+            <ul class="skill-list">
+              <li>Python</li>
+              <li>JavaScript ES6+</li>
+              <li>TypeScript</li>
+              <li>SQL</li>
+              <li>Java</li>
+              <li>C</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal">
+            <div class="skill-group__heading">
+              <span>02</span>
+              <h3>Full Stack</h3>
+            </div>
+            <ul class="skill-list">
+              <li>React.js</li>
+              <li>Next.js</li>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>Flask</li>
+              <li>FastAPI</li>
+              <li>Django</li>
+              <li>RESTful APIs</li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal">
+            <div class="skill-group__heading">
+              <span>03</span>
+              <h3>Data &amp; AI</h3>
+            </div>
+            <ul class="skill-list">
+              <li>Pandas</li>
+              <li>NumPy</li>
+              <li>Matplotlib</li>
+              <li>Power BI</li>
+              <li>Jupyter</li>
+              <li>Chart.js</li>
+              <li>AI Coding Agents</li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal">
+            <div class="skill-group__heading">
+              <span>04</span>
+              <h3>Data Platforms</h3>
+            </div>
+            <ul class="skill-list">
+              <li>MongoDB</li>
+              <li>MySQL</li>
+              <li>PostgreSQL</li>
+              <li>SQLite</li>
+              <li>Supabase</li>
+              <li>Git &amp; GitHub</li>
+              <li>Docker</li>
+              <li>Vercel</li>
+              <li>MS Excel</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About, experience and education -->
+    <section class="section about" id="about" aria-labelledby="about-title" data-section>
+      <div class="container">
+        <div class="about__layout">
+          <p class="section-kicker reveal">03 / About &amp; journey</p>
+
+          <div class="about__content">
+            <h2 class="section-title about__title reveal" id="about-title">
+              Engineering ideas into <em>useful, data-driven</em> products.
+            </h2>
+
+            <div class="about__copy reveal">
+              <p>
+                I’m Abhay Chouhan, an Information Science and Engineering graduate with hands-on experience across full-stack development, data analytics, and AI-assisted software engineering.
+              </p>
+              <p>
+                I enjoy learning quickly, solving practical problems, and carrying products from interface to API to data layer. My goal is software that is scalable, understandable, and genuinely useful.
+              </p>
+            </div>
+
+            <a class="about__resume reveal" href="assets/Abhay_Chouhan_Resume.pdf" type="application/pdf" data-resume-open>
+              View complete résumé
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 19 19 5M8 5h11v11"/>
+              </svg>
+            </a>
+
+            <div class="journey">
+              <article class="journey__item reveal">
+                <span>Jan—May 2026</span>
+                <p class="journey__type">Experience</p>
+                <h3>Data Analytics Intern</h3>
+                <p>Skyllx Technologies Pvt. Ltd. — data collection, cleaning, analysis, dashboards, and reporting with Python, SQL, Power BI, and AI-assisted tools.</p>
+              </article>
+              <article class="journey__item reveal">
+                <span>2022—2026</span>
+                <p class="journey__type">Education</p>
+                <h3>B.E. Information Science</h3>
+                <p>RR Institute of Technology, Bengaluru. Information Science and Engineering graduate with a CGPA of 7.6.</p>
+              </article>
+              <article class="journey__item reveal">
+                <span>2026</span>
+                <p class="journey__type">Recognition</p>
+                <h3>State-Level Selection</h3>
+                <p>Soldier Health &amp; Position Tracking System selected for the KSCST 49th Annual State-Level Student Project Programme.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact" aria-labelledby="contact-title" data-section>
+      <div class="container">
+        <p class="contact__kicker reveal">04 / Start a conversation</p>
+
+        <div class="contact__grid">
+          <div class="contact__content">
+            <h2 class="contact__title reveal" id="contact-title">
+              Let’s build something<br><em>worth using.</em>
+            </h2>
+            <p class="contact__intro reveal">
+              Looking for a full-stack developer, data analyst, or AI-assisted developer? Share the product, data challenge, or opportunity you have in mind.
+            </p>
+
+            <a class="contact__email reveal" href="mailto:abhaydinakar246@gmail.com">abhaydinakar246@gmail.com</a>
+
+            <div class="social-links reveal" aria-label="Professional links">
+              <a href="https://github.com/adc24" target="_top" rel="noopener">github.com/adc24 ↗</a>
+              <a href="https://www.linkedin.com/in/abhay-chouhan-563126313?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_top" rel="noopener">LinkedIn ↗</a>
+              <a href="assets/Abhay_Chouhan_Resume.pdf" download="Abhay_Chouhan_Resume.pdf" data-resume-download>Download résumé ↓</a>
+            </div>
+          </div>
+
+          <form
+            class="contact-form reveal"
+            action="https://formsubmit.co/abhaydinakar246@gmail.com"
+            method="POST"
+            target="_top"
+            data-contact-form
+            novalidate
+          >
+            <!-- FormSubmit delivers static-site form submissions to Abhay's Gmail. -->
+            <input type="hidden" name="_subject" value="New portfolio enquiry for Abhay Chouhan">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" class="form-honeypot" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+            <div class="form-field">
+              <label for="name">Your name</label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Jane Smith" required>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email address</label>
+              <input id="email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="jane@company.com" required>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Tell me about the project</label>
+              <textarea id="message" name="message" rows="4" placeholder="A short overview, timeline, and how I can help…" required></textarea>
+            </div>
+
+            <button class="contact-form__submit" type="submit">
+              <span>Send message</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 19 19 5M8 5h11v11"/>
+              </svg>
+            </button>
+
+            <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="footer__brand" href="#home">Abhay Chouhan<sup>®</sup></a>
+      <p>Full Stack Developer · Data Analyst · AI-Assisted Developer</p>
+      <p>© <span data-current-year>2026</span> Abhay Chouhan</p>
+    </div>
+  </footer>
+
+  <!-- In-page image viewer avoids PDF-plugin restrictions in embedded previews. -->
+  <dialog class="resume-viewer" aria-labelledby="resume-viewer-title" aria-describedby="resume-viewer-hint" data-resume-dialog>
+    <div class="resume-viewer__panel">
+      <header class="resume-viewer__header">
+        <div>
+          <p>Résumé · 2026</p>
+          <h2 id="resume-viewer-title">Abhay Chouhan</h2>
+        </div>
+
+        <div class="resume-viewer__actions">
+          <a class="resume-viewer__download" href="assets/Abhay_Chouhan_Resume.pdf" download="Abhay_Chouhan_Resume.pdf" data-resume-download>
+            <span>Download PDF</span>
+            <span aria-hidden="true">↓</span>
+          </a>
+          <button class="resume-viewer__close" type="button" aria-label="Close résumé viewer" data-resume-close>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 6l12 12M18 6 6 18"/>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <div class="resume-viewer__content" tabindex="0">
+        <p class="resume-viewer__hint" id="resume-viewer-hint">Two-page résumé · scroll to continue</p>
+
+        <div class="resume-viewer__pages">
+          <figure class="resume-viewer__page">
+            <img src="assets/resume-page-1.png" width="1224" height="1584" alt="Page one of Abhay Dinakar Chouhan's résumé, including summary, technical skills, experience, and the Soldier Health and Position Tracking project.">
+          </figure>
+          <figure class="resume-viewer__page">
+            <img src="assets/resume-page-2.png" width="1224" height="1584" loading="lazy" alt="Page two of Abhay Dinakar Chouhan's résumé, including DataSnap, the Customer Behavior Dashboard, education, soft skills, and certifications.">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>

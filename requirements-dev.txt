@@ -1,0 +1,2 @@
+# Optional: required only to regenerate résumé preview images.
+PyMuPDF>=1.24,<2
